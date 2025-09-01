@@ -13,7 +13,7 @@ class SyncTools < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1-test2/sync-tools_0.4.1-test2_darwin_amd64.tar.gz"
-      sha256 "d3b74a1e241c763dee1aa7f620850304a20c8bd03a6c836c3b5d746bbdd5419a"
+      sha256 "2c19c7f426f93c4c8c96b6d662959f6ee4f4d0c218d6785a5263499ad3eab2b1"
 
       def install
         bin.install "sync-tools"
@@ -28,7 +28,7 @@ class SyncTools < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1-test2/sync-tools_0.4.1-test2_darwin_arm64.tar.gz"
-      sha256 "904c722e2a28767473d2d36884ea00d77d80049c30d6f6c8de99ef7fed4c7f84"
+      sha256 "efa2e72195516f413b4e67d3a84264a69134edd82a158346ca30b2acdaf34fcd"
 
       def install
         bin.install "sync-tools"
@@ -46,7 +46,7 @@ class SyncTools < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1-test2/sync-tools_0.4.1-test2_linux_amd64.tar.gz"
-      sha256 "9b2c91396c0ad606732c9e123fa1fe792d60a00452af3d6563edadbc6fa63a11"
+      sha256 "856af39e65f37ab7e1033483580e619422d405f27ceeca797fbdf0475495477c"
       def install
         bin.install "sync-tools"
 
@@ -60,7 +60,7 @@ class SyncTools < Formula
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1-test2/sync-tools_0.4.1-test2_linux_arm64.tar.gz"
-      sha256 "84c9695ec59d484de6ab020053f9fe5ed7d5fc3f572d87ddac1961644d8517e3"
+      sha256 "a51a4f35dc08a93ca98a84ea74076f726ac109fcf218ef8b60ff573c9bdae1c0"
       def install
         bin.install "sync-tools"
 
