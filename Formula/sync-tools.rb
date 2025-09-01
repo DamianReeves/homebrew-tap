@@ -5,15 +5,15 @@
 class SyncTools < Formula
   desc "Go CLI wrapper around rsync with advanced filtering and SyncFile post-sync actions"
   homepage "https://github.com/DamianReeves/sync-tools"
-  version "0.4.1-test2"
+  version "0.4.1-test3"
   license "Apache-2.0"
 
   depends_on "rsync" => :runtime
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1-test2/sync-tools_0.4.1-test2_darwin_amd64.tar.gz"
-      sha256 "2c19c7f426f93c4c8c96b6d662959f6ee4f4d0c218d6785a5263499ad3eab2b1"
+      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1-test3/sync-tools_0.4.1-test3_darwin_amd64.tar.gz"
+      sha256 "b94593c66ea1676227b4d8e78dbefaf33917d956fed4ddd43e9d4b7311b38d65"
 
       def install
         bin.install "sync-tools"
@@ -27,8 +27,8 @@ class SyncTools < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1-test2/sync-tools_0.4.1-test2_darwin_arm64.tar.gz"
-      sha256 "efa2e72195516f413b4e67d3a84264a69134edd82a158346ca30b2acdaf34fcd"
+      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1-test3/sync-tools_0.4.1-test3_darwin_arm64.tar.gz"
+      sha256 "009cc0cfdb6a9e5c5ea76b5f58ed109b0edced7bc484c6ad253156472f905c5a"
 
       def install
         bin.install "sync-tools"
@@ -45,8 +45,8 @@ class SyncTools < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1-test2/sync-tools_0.4.1-test2_linux_amd64.tar.gz"
-      sha256 "856af39e65f37ab7e1033483580e619422d405f27ceeca797fbdf0475495477c"
+      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1-test3/sync-tools_0.4.1-test3_linux_amd64.tar.gz"
+      sha256 "460c0c98993f392432523687795b7d2a5fe82ee7779be1798f0a34cee3ed6643"
       def install
         bin.install "sync-tools"
 
@@ -59,8 +59,8 @@ class SyncTools < Formula
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1-test2/sync-tools_0.4.1-test2_linux_arm64.tar.gz"
-      sha256 "a51a4f35dc08a93ca98a84ea74076f726ac109fcf218ef8b60ff573c9bdae1c0"
+      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1-test3/sync-tools_0.4.1-test3_linux_arm64.tar.gz"
+      sha256 "19a190300c760dbe273fa1ffaeeb830ca43827bab564623de3f48a84710b7398"
       def install
         bin.install "sync-tools"
 
