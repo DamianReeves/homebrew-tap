@@ -5,15 +5,15 @@
 class SyncTools < Formula
   desc "Go CLI wrapper around rsync with advanced filtering and SyncFile post-sync actions"
   homepage "https://github.com/DamianReeves/sync-tools"
-  version "0.4.0"
+  version "0.4.1"
   license "Apache-2.0"
 
   depends_on "rsync" => :runtime
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.0/sync-tools_0.4.0_darwin_amd64.tar.gz"
-      sha256 "dac02a9fe68c439145ae377bfc1f9e951199ff94da3e0f38ce0df479f3ddfb77"
+      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1/sync-tools_0.4.1_darwin_amd64.tar.gz"
+      sha256 "8a0c443cc624dd798b66bf011f1325f39c1b9c695b71255998bd816b88c4e986"
 
       def install
         bin.install "sync-tools"
@@ -27,8 +27,8 @@ class SyncTools < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.0/sync-tools_0.4.0_darwin_arm64.tar.gz"
-      sha256 "3ceac1940ab439870e07aa94823f2259d79a134a7120477e1e4b8e3f57fc3a5f"
+      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1/sync-tools_0.4.1_darwin_arm64.tar.gz"
+      sha256 "1600059316c6234f19c24a0bd923ff0b92ef139dbd901b17bd0aeedd72911d21"
 
       def install
         bin.install "sync-tools"
@@ -45,8 +45,8 @@ class SyncTools < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.0/sync-tools_0.4.0_linux_amd64.tar.gz"
-      sha256 "d82c8f61ffc001d398b0f16ee0a8ee94e3296319e2eb10f6933686e13f8ff441"
+      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1/sync-tools_0.4.1_linux_amd64.tar.gz"
+      sha256 "bf84f1900c46e0a28c3a5371bbcdc7c3f552a17323cc4be4b34be9c7f3aeec21"
       def install
         bin.install "sync-tools"
 
@@ -59,8 +59,8 @@ class SyncTools < Formula
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.0/sync-tools_0.4.0_linux_arm64.tar.gz"
-      sha256 "3b620ac9e189979c3898912e5295be142c8ccb5dee0dda96ace19b52ea767866"
+      url "https://github.com/DamianReeves/sync-tools/releases/download/v0.4.1/sync-tools_0.4.1_linux_arm64.tar.gz"
+      sha256 "e31bf516fae4b799d558452ccecdd03c1d58fb3f9ce8009c20ca11302d9fc0a8"
       def install
         bin.install "sync-tools"
 
